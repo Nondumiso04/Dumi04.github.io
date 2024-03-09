@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enchated_Bridal_Botique</title>
+
+        <style>
+           
+            header {
+                background-color:black;
+            }
+            .navbar{
+                overflow: hidden;
+                z-index: 1;
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                font-size: 25px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center; 
+            }
+            .navbar a{
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            .navbar a:hover{
+               color:goldenrod;
+            }
+            .slogan1{
+                color:rgb(194, 147, 28);
+                position: absolute;
+                margin-left: 60%;
+                top: 50%;
+                font-size: 200%;
+            }
+            .slogan2{
+                color:white;
+                position: absolute;
+                margin-left: 60%;
+                top: 60%;
+                font-size: 250%;
+            }
+            .about{
+                font-size: 300%;
+                color: goldenrod;
+            }
+            .about-desc{
+                font-size: 150%;
+                color:goldenrod;
+            }
+            .about-image{
+                height:30%;
+                width: 42.2%;
+                position: relative;
+                margin-left: 57.8%;
+                margin-top: -46.7%;
+            }
+            .collection{
+                font-size: 300%;
+                color: goldenrod;
+            }
+            .ball-gowns{
+                color:goldenrod;
+            }
+            .collect1-image{
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect1-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect2-image{
+                position: relative;
+                margin-left: 7%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect2-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect3-image{
+                position: relative;
+                margin-left: 7.5%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect3-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect4-image{
+                position: relative;
+                margin-left: 0%;
+                margin-top: 1%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect4-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect5-image{
+                position: relative;
+                margin-left: 7%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect5-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect6-image{
+                position: relative;
+                margin-left: 7.5%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect6-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .mermaid{
+                color: goldenrod;
+            }
+            .collect7-image{
+                position: relative;
+                margin-left: 0%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect7-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect8-image{
+                position: relative;
+                margin-left: 7%;
+                height:10%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect8-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect9-image{
+                position: relative;
+                margin-left: 7.5%;
+                height:100%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect9-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect10-image{
+                position: relative;
+                margin-left: 0%;
+                height:100%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect10-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect11-image{
+                position: relative;
+                margin-left: 7%;
+                height:100%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect11-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .collect12-image{
+                position: relative;
+                margin-left: 7.5%;
+                height:100%;
+                width: 22%;
+                transition: transform 0.2s ease;
+            }
+            .collect12-image:hover{
+                transform: translateZ(10px) scale(1.1); /* Moving the image forward by 10 pixels and scaling up */
+               /* Setting up 3D perspective */
+               transform-style: preserve-3d;
+               perspective: 1000px;
+
+            }
+            .conclusion1{
+                color: goldenrod;
+                font-size: 150%;
+            }
+            
+            .testimonials-container {
+                position: relative;
+                overflow-x: auto; /* Enable horizontal scrolling */
+                white-space: nowrap; /* Prevent testimonials from wrapping */
+                background-color: black;
+                padding-top: 40px;
+                
+            }
+            .testimonial-heading{
+                color: goldenrod;
+                position: absolute; /* Position the heading */
+                top: 3800px; /* Adjust the distance above the testimonials */
+                left: 50%; /* Center the heading horizontally */
+                transform: translateX(-50%); 
+                padding: 10px; /* Add padding for spacing */
+                font-size: 240%;
+                z-index: 1;
+                 
+                
+            }
+            .testimonials {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-top: 80px;
+            }
+            .testimonial-card {
+                flex: 0 0 auto; /* Allow cards to shrink or grow as needed */
+                width: 350px; /* Set width for each testimonial card */
+                height: 250px; /* Set height for each testimonial card */
+                background-color:white;
+                border: 1px solid #ccc;
+                margin-right: -20px; /* Adjust margin between cards */
+                margin-left: 5%;
+            }
+            .space{
+                height: 100%;
+            }
+            .conclusiiion{
+                color: goldenrod;
+            }
+            .custom-link-2 {
+               text-decoration: none;
+               position: relative;
+               top:530%;
+               margin-left: 0%;
+               width: 7%;
+               height: 30%;
+            }
+            .custom-button-2 {
+               border: none;
+               cursor: pointer;
+               position: relative;
+               top:530%;
+               margin-left: 0%;
+               width: 7%;
+               height: 30%;
+               border-radius: 50%;
+               box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+    
+            }
+            .custom-link-3 {
+               text-decoration: none;
+               position: relative;
+               top:530%;
+               margin-left: 2%;
+               width: 7%;
+               height: 30%;
+            }
+            .custom-button-3 {
+               border: none;
+               cursor: pointer;
+               position: relative;
+               top:530%;
+               margin-left: 2%;
+               width: 7%;
+               height: 30%;
+               border-radius: 50%;
+               box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+    
+            }
+            .spaace{
+                height: 150%;
+                font-size: 25px;
+                color: goldenrod;
+                
+            }
+            footer {
+               background-color: black;
+               color: white;
+               padding: 20px;
+               text-align: center;
+            }
+            
+        
+        </style>
+    </head>
+
+
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="#section1">Home</a>
+                <a href="#section2">About</a>
+                <a href="#section3">Our Collection</a>
+                <a href="#section4">Testimonials</a>
+                <a href="#section5">Connect</a>
+            </div>
+
+            <section id="section1">
+                <div class="slogan1">
+                    <h2>Where Dreams Unveil:</h2>
+                </div>
+    
+                <div class="slogan2">
+                    <h1>Enchated Bridal </h1>
+                    <h1>Botique</h1>
+                </div>
+    
+                <img src="pictures/Princess 2023 Collection — Frida Xhoi & Xhei (1).jfif" alt="..." class="positioned-image">
+
+            </section>
+        </header>
+
+        <section id="section2">
+            <h1 class="about">About</h1>
+           <p class="about-desc">
+                At Enchanted Bridal Boutique, we believe that every bride deserves <br>to feel like royalty on her special day.
+                Our curated collection of<br> enchanting wedding dresses is designed to capture the magic and <br>elegance of love's 
+                timeless celebration. From ethereal ball gowns to <br> sophisticated sheath dresses, each gown is meticulously crafted 
+                to <br>reflect the unique style and personality of our brides. Step into our <br>virtual boutique and let us help you find 
+                the dress of your dreams,<br> where enchantment meets bridal bliss. <br> <br>
+
+                Our team of experienced bridal consultants is dedicated to helping <br>
+                 you navigate through our enchanting selection, ensuring that you find  <br>
+                 the dress of your dreams that perfectly complements your vision for your  <br>
+                 wedding day. Whether you're envisioning a fairytale-inspired celebration <br>
+                  or a timeless and classic affair, we have the perfect gown to make your <br>
+                   dreams a reality.
+            </p>
+            <img src="pictures/Wedding dress - Frida Xhoi Xhei.jfif" alt="..." class="about-image">
+        </section>
+
+        <section id="section3">
+            <h1 class="collection">Browse Our Collection</h1>
+            <h1 class="ball-gowns">Our Ball gown dresses range from R15 000,00 to R60 000,000. These dresses are handcrafted by our qualified
+                 designers with the most beautiful abrics from china 
+            </h1>
+            <img src="pictures/download (5).jpg" alt="..." class="collect1-image">
+            <img src="pictures/dumi.jfif" alt="..." class="collect2-image">
+            <img src="pictures/download (6).jfif" alt="..." class="collect3-image">
+            <img src="pictures/Wedding dress.jfif" alt="..." class="collect4-image">
+            
+            <img src="pictures/Wedding dress - Frida Xhoi Xhei.jfif" alt="..." class="collect5-image">
+            <img src="pictures/Wedding dress (1).jfif" alt="..." class="collect6-image">
+
+            <h1 class="mermaid">Our Mermaid/trumpet dresses range from R15 000,00 to R60 000,000. These dresses are handcrafted by our qualified
+                designers with the most beautiful abrics from china 
+           </h1>
+           <img src="pictures/original-5E407EBC-2E75-4632-A9EE-85519A419041.jpeg" alt="..." class="collect7-image">
+           <img src="pictures/original-34ED4812-485C-47F9-B3BE-BB7686F3FE21.jpeg" alt="..." class="collect8-image">
+           <img src="pictures/original-6A3A42A5-0F0C-43A6-961F-28A9C51B57F3.jpeg" alt="..." class="collect9-image">
+           <img src="pictures/Wedding dress - Albina Dyla (1).jfif" alt="..." class="collect10-image">
+           <img src="pictures/Wedding dress - Albina Dyla.jfif" alt="..." class="collect11-image">
+           <img src="pictures/download (12).jfif" alt="..." class="collect12-image">
+
+           <p class="conclusion1">
+            Enchanted Wedding Boutique is your premier destination for exquisite wedding dresses
+             designed to make your special day truly magical. While our website showcases a range of 
+             stunning samples, our expertise extends far beyond what you see here. We take pride in our 
+             ability to bring your unique vision to life, crafting bespoke wedding gowns tailored to your 
+             individual style and preferences.<br><br>
+
+             1.Ballgown: Perfect for brides seeking a classic, fairy-tale silhouette.<br>
+             2.A-line: Timeless and universally flattering, ideal for brides of all shapes and sizes.<br>
+             3.Mermaid/Trumpet: Celebrating feminine curves with a form-fitting design that flares at the hem.<br>
+             4.Sheath/Column: Effortlessly elegant, offering a sleek and minimalist aesthetic.<br>
+              5.Tea-length: Retro-inspired and playful, striking the perfect balance between traditional and modern
+           </p>
+
+        </section>
+
+        <section id="section4">
+            <h1 class="testimonial-heading">Testimonials</h1>
+
+            <div class="testimonials-container">
+                
+                <div class="testimonials">
+                  <!-- Testimonials cards go here -->
+                  <div class="testimonial-card">
+                     Enchanted Wedding Boutique made my<br> 
+                     lifelong dream a reality. From the moment <br>I
+                     contacted them with the design that had <br>
+                     lived in my head since childhood, I knew <br>
+                     I was in capable hands. The team's attention<br>
+                      to detail and dedication to understanding<br>
+                      my vision was truly remarkable. Throughout <br>
+                      the process, they listened intently to my ideas,<br>
+                       offering expert advice and guidance every step <br>
+                       of the way.<br>
+                       <h3>~Connie Maxwell</h3>
+                  </div>
+                  <div class="testimonial-card">
+                    Enchanted Wedding Boutique exceeded all <br>
+                     expectations and truly made our wedding<br>
+                     day unforgettable. From the moment my wife <br>
+                     stepped out in her stunning gown,I was<br>
+                     mesmerized by its beauty and elegance. <br>
+                     Every intricate detail, from the delicate <br>
+                     lace to the shimmering beadwork, was a<br>
+                      testament to the craftsmanship and artistry<br>
+                       of the team at Enchanted Wedding Boutique.<br><br>
+                       <h3>~Amanda Mazoro</h3>
+                  </div>
+                  <div class="testimonial-card">
+                    I am endlessly grateful to Enchanted Wedding <br>
+                    Boutique for their dedication to perfection and <br>
+                    their ability to bring my wife's vision to life. <br>
+                    Their professionalism and attention to detail <br>ensured
+                    that every aspect of the dress was<br> flawless, making our
+                    wedding day even more<br> special.<br><br><br><br>
+                    <h3>~Sima Pindani</h3>
+                  </div>
+                  <div class="testimonial-card">
+                    Enchanted Wedding Boutique transformed <br>
+                    my uncertainty into pure bliss. Walking <br>
+                    into their studio with no idea of what I <br>
+                    wanted my dress to be was daunting, but their<br>
+                    team quickly put me at ease. With patience <br>
+                    and expertise, they guided me through the <br>
+                    process, helping me discover the perfect <br>
+                    silhouette, fabric, and design.<br><br><br>
+                    <h3>~Ashely Snow</h3>
+                  </div>
+                  
+                  <!-- Add more testimonial cards as needed -->
+                </div>
+               
+
+                <div class="space"></div>
+                <h1>space</h1>
+            </div>
+        </section>
+
+        <section id="section5">
+            <h1 class="conclusiiion">
+                we invite you to schedule an appointment with us for a personalized
+                 fitting or a consultation to discuss the design you have in mind. Our dedicated
+                  team is here to ensure that every aspect of your dress is tailored to perfection, 
+                  from the initial concept to the final fitting. <br><br><br>
+                  Connect with us:
+
+            </h1>
+            <a href="https://web.facebook.com/Drake" target="_blank" class="custom-link-2">
+                <img src="pictures/facebook.png" alt="Button Image" class="custom-button-2">
+            </a>
+
+            <a href="https://www.instagram.com/champagnepapi/?hl=en" target="_blank" class="custom-link-3">
+                <img src="pictures/Instagram-Feature-2.jpg" alt="Button Image" class="custom-button-3">
+             </a>
+
+        </section>
+    </body>
+
+    <div class="spaace">
+
+        <p>
+            villa-luandi<br>
+            Enchated Dress Botique<br>
+            279 Lewisham round-thumbnail<br>
+            Johhanesburg<br>
+            6001<br><br>
+
+            call:0112673829
+
+        
+        </p>
+    </div>
+
+    <footer>
+        © Copyright 2024. All Rights Reserved. Designed And Built by @Dumi
+
+    </footer>
+</html>
